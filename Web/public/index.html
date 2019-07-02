@@ -16,36 +16,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-            xfbml            : true,
-            version          : 'v3.3'
-            });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- Your customer chat code -->
-        <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="296876381163422"
-        logged_in_greeting="Hola, bienvenido a SERMUPRO. ¿En que podemos ayudarte?"
-        logged_out_greeting="Hola, bienvenido a SERMUPRO. ¿En que podemos ayudarte?">
-        </div>
         <header>
-            <h1>
-                <img src="./img/nav_logo.png" alt="Logo SERMUPRO">
-            </h1>
+            <img src="./img/nav_logo.png" alt="Logo SERMUPRO">
             <nav>
-                <ul>
+                <label for="menu-toggle">
+                </label>
+                <input type="checkbox" id="menu-toggle"/>
+                <ul id="menu">
                     <li>
                         <a href="#nosotros">
                             <svg viewBox="0 0 502.6 502.6">
@@ -80,10 +57,93 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <div class="slider">
+        <section class="container">
+            <div class="wrapper">
+                <div class="slider">
+                    <img src="img/slider01.png" alt="">
+                </div>
+                <div class="slider">
+                    <img src="img/slider02.png" alt="">
+                </div>
+                <div class="slider">
+                    <img src="img/slider03.png" alt="">
+                </div>
             </div>
-        </div>
-        <script src="" async defer></script>
+        </section>
+        <section id="nosotros" class="cuerpo">
+          <div class="title">
+            <h3>Acerca de TPS Publicidad</h3>
+          </div>
+          <div class="contain">
+
+          </div>
+        </section>
+        <section id="servicios" class="cuerpo">
+          <div class="title">
+            <h3>Nuestros servicios</h3>
+          </div>
+          <div class="contain">
+
+          </div>
+        </section>
+        <section id="contacto" class="cuerpo">
+          <div class="title">
+            <h3>Contactanos</h3>
+          </div>
+          <div class="contain">
+            <div class="form">
+              <form action="">
+                  <fieldset>
+                    <legend>Excribínos</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="texto">
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto" class="texto">
+                    <textarea name="mensaje" id="mensaje" cols="" rows="10" placeholder="Escribe aquí tu mensaje" class="texto"></textarea>
+                    <input type="submit" value="Enviar">
+                  </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="contain">      
+                <div class="row">
+                  <div class="row__inner">
+              
+                    <div class="tile">
+                      <div class="tile__media">
+                        <img class="tile__img" src="img/slider01.png" alt=""  />
+                      </div>
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          TRABAJOS EN ACRÍLICO
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="tile">
+                      <div class="tile__media">
+                        <img class="tile__img" src="img/slider02.png" alt=""  />
+                      </div>
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          IMPRESIÓN A GRAN FORMATO
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="tile">
+                      <div class="tile__media">
+                        <img class="tile__img" src="img/slider03.png" alt=""  />
+                      </div>
+                      <div class="tile__details">
+                        <div class="tile__title">
+                          GRABADOS CON LÁSER
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              
+              </div> -->
     </body>
 </html>
